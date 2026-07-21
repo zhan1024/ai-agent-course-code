@@ -6,7 +6,7 @@ import fs from 'node:fs/promises';
 import { z } from 'zod';
 
 const model = new ChatOpenAI({ 
-  modelName: process.env.MODEL_NAME || "qwen-coder-turbo",
+  modelName: process.env.MODEL_NAME || "gpt-5.5",
   apiKey: process.env.OPENAI_API_KEY,
   temperature: 0,
   configuration: {
